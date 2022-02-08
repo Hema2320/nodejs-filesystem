@@ -4,8 +4,6 @@ const PORT=9000
 const timestamp = new Date().getTime().toString();
 //const result=Math.round(new Date().getTime()/1000).toString();
 //const result=Math.round(new Date()).toString;
-
-
 //const res= new Date().valueOf().toString()
 fs.writeFileSync("sample/date-time.txt",timestamp)
 http.createServer((req,res)=>{
@@ -18,5 +16,5 @@ http.createServer((req,res)=>{
    })
 
 }).listen(PORT,()=>{
-    console.log('Listening tot ',PORT);
+   console.log('Listening tot ',PORT);
 })
