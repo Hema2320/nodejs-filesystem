@@ -9,7 +9,6 @@ fs.writeFileSync("sample/date-time.txt",timestamp)
 http.createServer((req,res)=>{
    res.writeHeader(200,{"Content-type":"text/html"})
    fs.readFile('sample/date-time.txt',(err,data)=>{
-
        res.write(data);
        res.end();
 
@@ -18,3 +17,4 @@ http.createServer((req,res)=>{
 }).listen(PORT,()=>{
    console.log('Listening tot ',PORT);
 })
+
