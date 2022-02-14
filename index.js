@@ -1,5 +1,7 @@
 const http=require('http')
 const fs=require('fs')
+var express =require('express');
+var router=express.Router()
 const PORT=9000
 const timestamp = new Date().getTime().toString();
 //const result=Math.round(new Date().getTime()/1000).toString();
@@ -17,4 +19,5 @@ http.createServer((req,res)=>{
 }).listen(PORT,()=>{
    console.log('Listening tot ',PORT);
 })
+module.exports=router;
 
